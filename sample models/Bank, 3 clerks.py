@@ -36,6 +36,6 @@ clerks = [Clerk() for _ in range(3)]
 waitingline = sim.Queue("waitingline")
 
 env.run(till=50000)
-waitingline.print_histograms()
+# waitingline.print_histograms()
 
 waitingline.print_info()

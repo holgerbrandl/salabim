@@ -26,7 +26,7 @@ class Clerk(sim.Component):
             self.customer.activate()
 
 
-env = sim.Environment()
+env = sim.Environment(trace=True)
 CustomerGenerator()
 for i in range(3):
     Clerk()

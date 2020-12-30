@@ -33,6 +33,6 @@ CustomerGenerator()
 clerk = Clerk()
 waitingline = sim.Queue("waitingline")
 
-env.run(till=50)
+env.run(till=5000)
 print()
 waitingline.print_statistics()
