@@ -8,8 +8,8 @@ class Customer(sim.Component):
 
 env = sim.Environment(trace=True)
 
-Customer(name="Car1", at=3)
-Customer(name="Car2", at=3)
+Customer(name2="Car1", at=3)
+Customer(name="Car2", at=3, priority=-1)
 
 env.run(till=5)
 
