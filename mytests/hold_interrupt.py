@@ -3,6 +3,7 @@ import salabim as sim
 
 class Customer(sim.Component):
     def process(self):
+        # yield self.hold(0.1)
         print("huhu")
 
 
