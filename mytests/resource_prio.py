@@ -21,7 +21,7 @@ class BigConsumer(sim.Component):
         global criticalRequestHonored
 
         yield self.hold(7)
-        yield self.request((r, 2), priority=10)  # this should outrank the late customer
+        yield self.request((r, 2, -10))  # lower means more important in salabim
         criticalRequestHonored = True
         yield self.hold(5)
         self.release(r)
